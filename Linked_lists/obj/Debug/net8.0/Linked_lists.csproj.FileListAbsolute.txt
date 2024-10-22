@@ -1,0 +1,15 @@
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\bin\Debug\net8.0\Linked_lists.exe
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\bin\Debug\net8.0\Linked_lists.deps.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\bin\Debug\net8.0\Linked_lists.runtimeconfig.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\bin\Debug\net8.0\Linked_lists.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\bin\Debug\net8.0\Linked_lists.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\obj\Debug\net8.0\Linked_lists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\obj\Debug\net8.0\Linked_lists.AssemblyInfoInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\obj\Debug\net8.0\Linked_lists.AssemblyInfo.cs
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\obj\Debug\net8.0\Linked_lists.csproj.CoreCompileInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\obj\Debug\net8.0\Linked_lists.sourcelink.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\obj\Debug\net8.0\Linked_lists.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\obj\Debug\net8.0\refint\Linked_lists.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\obj\Debug\net8.0\Linked_lists.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\obj\Debug\net8.0\Linked_lists.genruntimeconfig.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked_lists\obj\Debug\net8.0\ref\Linked_lists.dll
