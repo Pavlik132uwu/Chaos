@@ -1,0 +1,7 @@
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked Lists\bin\Debug\Linked Lists.exe.config
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked Lists\bin\Debug\Linked Lists.exe
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked Lists\bin\Debug\Linked Lists.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked Lists\obj\Debug\Linked Lists.csproj.AssemblyReference.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked Lists\obj\Debug\Linked Lists.csproj.CoreCompileInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked Lists\obj\Debug\Linked Lists.exe
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Linked Lists\obj\Debug\Linked Lists.pdb
