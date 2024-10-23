@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pavel\\Documents\\1.\u0161kola\\GCHD\\IVT\\Chaos\\Linked_lists\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B658B8D-01AA-4753-BD86-20E1F8489642}|Linked_lists.csproj|c:\\users\\pavel\\documents\\1.\u0161kola\\gchd\\ivt\\chaos\\linked_lists\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B658B8D-01AA-4753-BD86-20E1F8489642}|Linked_lists.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pavel\\Documents\\1.\u0161kola\\GCHD\\IVT\\Chaos\\Linked_lists\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\pavel\\Documents\\1.\u0161kola\\GCHD\\IVT\\Chaos\\Linked_lists\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T17:38:13.515Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
