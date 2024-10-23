@@ -1,15 +1,34 @@
-﻿namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jednosměrný spojový seznam dále implementujte funkci na: Nalezení minima ve spojovém seznamu(50b) - Upozornění: V jednom seznamu se hodnoty mohou opakovat.Seznamy mohou být i prázdné.
+﻿using System.Xml.Linq;
+
+namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jednosměrný spojový seznam dále implementujte funkci na: Nalezení minima ve spojovém seznamu(50b) - Upozornění: V jednom seznamu se hodnoty mohou opakovat.Seznamy mohou být i prázdné.
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             LinkedList linkedList = new LinkedList();
+            linkedList.Add(1);
+            linkedList.Add(2);
+            linkedList.Add(3);
+            linkedList.Add(4);
+            linkedList.Add(5);
+            linkedList.Add(6);
+            linkedList.Add(7);
+            linkedList.Add(8);
+            linkedList.Add(9);
+            linkedList.Add(10);
+            
             int? min = linkedList.FindMin(); //pokud to chápu správně, funkce měla minimum pouze nacházet ne i vypisovat, pokud to tedy chceme udělat, je to nutné provést mimo funkci
             if (min == null)
                 Console.WriteLine("List je prázdný");
             else
                 Console.WriteLine($"Minimum v seznamu: {min}");
+            
+            string allValues = linkedList.PrintLinkedList();
+            if (allValues == null)
+                Console.WriteLine("List je prázdný");
+            else
+                Console.WriteLine(allValues);
         }
 
         class Node // Node je náš název pro třídu reprezentující jeden prvek spojového seznamu
@@ -69,19 +88,55 @@
                     return null;
 
                 int min = Head.Value;
-                Node current = Head.Next;
+                Node node = Head.Next;
 
-                while (current != null)
+                while (node != null)
                 {
-                    if (current.Value < min)
+                    if (node.Value < min)
                     {
-                        min = current.Value;
+                        min = node.Value;
                     }
-                    current = current.Next;
+                    node = node.Next;
                 }
 
                 return min;
             }
+            public string PrintLinkedList()
+            {
+                Node node = Head;
+                string allValues = "";
+                if (node == null)
+                    allValues = null;
+                while (node != null)
+                {
+                    allValues += node.Value;
+                    allValues += " ";
+                    node = node.Next;
+                }
+                return allValues;
+            }
+            public void SortLinkedList()
+            {
+                if (Head == null)
+                    throw new InvalidOperationException("Čúrák");
+                Node node = Head;
+                while (true)
+                {
+                    while (node != null)
+                    {
+                        if (node.Value < node.Next.Value)
+                            node = node.Next;
+                        else
+                        {
+                            Node tempNode = node;
+                            node.Next = node;
+                        }
+                    }
+
+                }
+
+            }
+            
         }
     }
 }
