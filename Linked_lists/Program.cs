@@ -9,23 +9,18 @@ namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jedno
         static void Main(string[] args)
         {
             LinkedList linkedList = new LinkedList();
-            linkedList.Add(15);
-            linkedList.Add(3);
-            linkedList.Add(7);
-            linkedList.Add(9);
-            linkedList.Add(0);
-            linkedList.Add(-1);
-            linkedList.Add(7);
-            linkedList.Add(80);
+            linkedList.Add(4);
             linkedList.Add(1);
-            linkedList.Add(10);
             linkedList.Add(0);
+            linkedList.Add(2);
+            linkedList.Add(3);
+            linkedList.Add(2);
 
             LinkedList secondLinkedList = new LinkedList();
-            secondLinkedList.Add(10);
-            secondLinkedList.Add(1);
-            secondLinkedList.Add(50);
             secondLinkedList.Add(0);
+            secondLinkedList.Add(2);
+            secondLinkedList.Add(1);
+            secondLinkedList.Add(8);
 
             int? min = linkedList.FindMin(); //pokud to chápu správně, funkce měla minimum pouze nacházet ne i vypisovat, pokud to tedy chceme udělat, je to nutné provést mimo funkci
             if (min == null)
@@ -46,8 +41,11 @@ namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jedno
             else
                 Console.WriteLine(allValues);
 
-            string prunik = linkedList.PenetrationOfLinkedLists(secondLinkedList);
-            Console.WriteLine("Průnik spojovych seznamů: " + prunik);
+            string prunik = linkedList.DestructivlyIntersectLinkedLists(secondLinkedList);
+            Console.WriteLine("Destruktivní průnik spojovych seznamů: " + prunik);
+
+            string sjednocení = linkedList.DestructivlyUnifyLinkedLists(secondLinkedList);
+            Console.WriteLine("Destruktivní sjednocení spojovych seznamů: " + sjednocení);
         }
 
         class Node // Node je náš název pro třídu reprezentující jeden prvek spojového seznamu
@@ -194,7 +192,7 @@ namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jedno
                 return result;
             }
             //konec funkcí pro sortění
-            public string PenetrationOfLinkedLists(LinkedList otherList) // čas O(n) jakoby n+m protože druhý list ale chápeme
+            public string DestructivlyIntersectLinkedLists(LinkedList otherList) // čas O(n) jakoby n+m protože druhý list ale chápeme
             {
                 if (Head == null || otherList.Head == null)
                     return "bez průniku";
@@ -225,7 +223,7 @@ namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jedno
                     current = current.Next;
                 }
 
-                StringBuilder resultBuilder = new StringBuilder();
+                StringBuilder resultBuilder = new StringBuilder(); //prý je lepší to dávat do nějaké téhle lepšověci ne jen do stringu, ale bez mučení se přiznám, že můj výmysl to nebyl
 
                 foreach (var pair in countInFirstList) //pár hodnoty a klíče v Dictionary
                 {
@@ -236,10 +234,39 @@ namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jedno
                         int countInSecond = countInSecondList[value];
                         int minCount = Math.Min(countInFirst, countInSecond);
                         for (int i = 0; i < minCount; i++) //přidá klíč tolikrát kolikrát je min hodnot z prvního a druhého listu
-                            resultBuilder.Append(value).Append(" ");
+                            resultBuilder.Append(value).Append(",");
                     }
                 }
-                return resultBuilder.Length == 0 ? "bez průniku" : resultBuilder.ToString().Trim(); //fancy funkce co se postará o to, že pokud není průnik tak se to napíše jinak se vrátí klasicky hodnoty
+                return resultBuilder.Length == 0 ? "bez průniku" : resultBuilder.ToString().TrimEnd(','); //fancy funkce co se postará o to, že pokud není průnik tak se to napíše jinak se vrátí klasicky hodnoty
+            }
+            public string DestructivlyUnifyLinkedLists(LinkedList otherList) // čas O(n) zase to n+m
+            {
+                if (Head == null || otherList.Head == null)
+                    throw new InvalidOperationException("Jeden ze seznamů je prázdný.");
+
+                HashSet<int> uniqueValues = new HashSet<int>(); //abych se ujistil, že je to tam poprvé
+                StringBuilder resultBuilder = new StringBuilder();
+
+                Node current = Head;
+                while (current != null)
+                {
+                    if (uniqueValues.Add(current.Value))
+                    {
+                        resultBuilder.Append(current.Value).Append(",");
+                    }
+                    current = current.Next;
+                }
+
+                current = otherList.Head; //takhle můžu pokračovat do nekonečna ve sjednocování listů
+                while (current != null)
+                {
+                    if (uniqueValues.Add(current.Value))
+                    {
+                        resultBuilder.Append(current.Value).Append(",");
+                    }
+                    current = current.Next;
+                }
+                return resultBuilder.ToString().TrimEnd(',');
             }
         }
     }
