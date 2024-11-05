@@ -1,4 +1,6 @@
-﻿using System.Xml.Linq;
+﻿using System.Collections.Generic;
+using System.Text;
+using System.Xml.Linq;
 
 namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jednosměrný spojový seznam dále implementujte funkci na: Nalezení minima ve spojovém seznamu(50b) - Upozornění: V jednom seznamu se hodnoty mohou opakovat.Seznamy mohou být i prázdné.
 {
@@ -7,28 +9,45 @@ namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jedno
         static void Main(string[] args)
         {
             LinkedList linkedList = new LinkedList();
-            linkedList.Add(1);
-            linkedList.Add(2);
+            linkedList.Add(15);
             linkedList.Add(3);
-            linkedList.Add(4);
-            linkedList.Add(5);
-            linkedList.Add(6);
             linkedList.Add(7);
-            linkedList.Add(8);
             linkedList.Add(9);
+            linkedList.Add(0);
+            linkedList.Add(-1);
+            linkedList.Add(7);
+            linkedList.Add(80);
+            linkedList.Add(1);
             linkedList.Add(10);
-            
+            linkedList.Add(0);
+
+            LinkedList secondLinkedList = new LinkedList();
+            secondLinkedList.Add(10);
+            secondLinkedList.Add(1);
+            secondLinkedList.Add(50);
+            secondLinkedList.Add(0);
+
             int? min = linkedList.FindMin(); //pokud to chápu správně, funkce měla minimum pouze nacházet ne i vypisovat, pokud to tedy chceme udělat, je to nutné provést mimo funkci
             if (min == null)
                 Console.WriteLine("List je prázdný");
             else
                 Console.WriteLine($"Minimum v seznamu: {min}");
-            
+
             string allValues = linkedList.PrintLinkedList();
             if (allValues == null)
                 Console.WriteLine("List je prázdný");
             else
                 Console.WriteLine(allValues);
+
+            linkedList.SortLinkedList();
+            allValues = linkedList.PrintLinkedList();
+            if (allValues == null)
+                Console.WriteLine("List je prázdný");
+            else
+                Console.WriteLine(allValues);
+
+            string prunik = linkedList.PenetrationOfLinkedLists(secondLinkedList);
+            Console.WriteLine("Průnik spojovych seznamů: " + prunik);
         }
 
         class Node // Node je náš název pro třídu reprezentující jeden prvek spojového seznamu
@@ -101,7 +120,7 @@ namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jedno
 
                 return min;
             }
-            public string PrintLinkedList()
+            public string PrintLinkedList() //čas: O(n)
             {
                 Node node = Head;
                 string allValues = "";
@@ -115,28 +134,113 @@ namespace Linked_lists //V tomto projektu v rámci vytvořené třídy pro jedno
                 }
                 return allValues;
             }
-            public void SortLinkedList()
+            //tady začínají funkce pro sortění
+            public void SortLinkedList() //čas: O(n log(n) - že já to dělal tímhle mohl jsem mít krásný bubble sort a tolik se s tím neštvat (můžu nějaký malý bonus za ty útrapy, prosím pěkně)
             {
-                if (Head == null)
-                    throw new InvalidOperationException("Čúrák");
-                Node node = Head;
-                while (true)
-                {
-                    while (node != null)
-                    {
-                        if (node.Value < node.Next.Value)
-                            node = node.Next;
-                        else
-                        {
-                            Node tempNode = node;
-                            node.Next = node;
-                        }
-                    }
+                if (Head == null || Head.Next == null)
+                    return;
 
+                Head = MergeSort(Head);
+            }
+
+            private Node MergeSort(Node head)
+            {
+                if (head == null || head.Next == null)
+                    return head;
+
+                Node middle = GetMiddle(head);
+                Node nextOfMiddle = middle.Next;
+                middle.Next = null; // tady vlastně přetrhnu to napojení na další prvek a vytvořím dva podlisty
+
+                Node firstHalve = MergeSort(head); //pro každou stranu opakuju
+                Node secondHalve = MergeSort(nextOfMiddle);
+
+                return SortedMerge(firstHalve, secondHalve);
+            }
+
+            private Node GetMiddle(Node head)
+            {
+                if (head == null) //k tomuto se chci dostat, tedy kdy už listy 
+                    return head;
+
+                Node turtle = head, Achilles = head.Next;
+                while (Achilles != null && Achilles.Next != null)
+                {
+                    turtle = turtle.Next;
+                    Achilles = Achilles.Next.Next;
+                }
+                return turtle;
+            }
+
+            private Node SortedMerge(Node firstHalve, Node secondHalve)
+            {
+                if (firstHalve == null)
+                    return secondHalve;
+                if (secondHalve == null)
+                    return firstHalve;
+
+                Node result;
+                if (firstHalve.Value <= secondHalve.Value)
+                {
+                    result = firstHalve;
+                    result.Next = SortedMerge(firstHalve.Next, secondHalve);
+                }
+                else
+                {
+                    result = secondHalve;
+                    result.Next = SortedMerge(firstHalve, secondHalve.Next);
                 }
 
+                return result;
             }
-            
+            //konec funkcí pro sortění
+            public string PenetrationOfLinkedLists(LinkedList otherList) // čas O(n) jakoby n+m protože druhý list ale chápeme
+            {
+                if (Head == null || otherList.Head == null)
+                    return "bez průniku";
+
+                Dictionary<int, int> countInFirstList = new Dictionary<int, int>(); //abych se ujistil správný průnik, s funkcí find se dělo to, že jsem nemohl správně odebírat prvky a pak došlo např. k průniku dvou stejných hodnot i když byly dvakrát jen v prvním listu a v druhém jen jednou
+                Node current = Head;
+
+                while (current != null)
+                {
+                    if (countInFirstList.ContainsKey(current.Value))
+                        countInFirstList[current.Value]++;
+                    else
+                        countInFirstList[current.Value] = 1;
+
+                    current = current.Next;
+                }
+
+                Dictionary<int, int> countInSecondList = new Dictionary<int, int>(); //stejné jak pro list n ale akorát s values pro m
+                current = otherList.Head;
+
+                while (current != null)
+                {
+                    if (countInSecondList.ContainsKey(current.Value))
+                        countInSecondList[current.Value]++;
+                    else
+                        countInSecondList[current.Value] = 1;
+
+                    current = current.Next;
+                }
+
+                StringBuilder resultBuilder = new StringBuilder();
+
+                foreach (var pair in countInFirstList) //pár hodnoty a klíče v Dictionary
+                {
+                    int value = pair.Key;
+                    if (countInSecondList.ContainsKey(value))
+                    {
+                        int countInFirst = pair.Value;
+                        int countInSecond = countInSecondList[value];
+                        int minCount = Math.Min(countInFirst, countInSecond);
+                        for (int i = 0; i < minCount; i++) //přidá klíč tolikrát kolikrát je min hodnot z prvního a druhého listu
+                            resultBuilder.Append(value).Append(" ");
+                    }
+                }
+                return resultBuilder.Length == 0 ? "bez průniku" : resultBuilder.ToString().Trim(); //fancy funkce co se postará o to, že pokud není průnik tak se to napíše jinak se vrátí klasicky hodnoty
+            }
         }
     }
 }
