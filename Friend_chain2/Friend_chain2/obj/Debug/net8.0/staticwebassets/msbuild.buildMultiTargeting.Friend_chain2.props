@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Friend_chain2.props" />
+</Project>
