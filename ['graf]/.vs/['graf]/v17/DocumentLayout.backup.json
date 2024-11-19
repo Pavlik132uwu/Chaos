@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "O:\\ciiiheshteg\\Chaos\\Linked_lists\\",
+  "WorkspaceRootPath": "O:\\ciiiheshteg\\Chaos\\[\u0027graf]\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B658B8D-01AA-4753-BD86-20E1F8489642}|Linked_lists.csproj|o:\\ciiiheshteg\\chaos\\linked_lists\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B658B8D-01AA-4753-BD86-20E1F8489642}|Linked_lists.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3372022A-98C6-4123-8E04-951DD02AAC31}|[\u0027graf].csproj|o:\\ciiiheshteg\\chaos\\[\u0027graf]\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3372022A-98C6-4123-8E04-951DD02AAC31}|[\u0027graf].csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "O:\\ciiiheshteg\\Chaos\\Linked_lists\\Program.cs",
+              "DocumentMoniker": "O:\\ciiiheshteg\\Chaos\\[\u0027graf]\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "O:\\ciiiheshteg\\Chaos\\Linked_lists\\Program.cs",
+              "ToolTip": "O:\\ciiiheshteg\\Chaos\\[\u0027graf]\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAPgAAAAAAAAAAAAgwNMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:38:13.515Z",
+              "WhenOpened": "2024-11-13T14:07:03.845Z",
               "EditorCaption": ""
             },
             {
