@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace toilet_paper
 {
@@ -10,21 +7,40 @@ namespace toilet_paper
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Zadej závorky ke kontrole");
-            string bracketsInput = Console.ReadLine();
-            Stack<char> bracketsSplit = new Stack<char>();
-            for (int i = 0; i < bracketsInput.Length; i++)
+            Console.WriteLine("Edvard po Vás chce nějaké pěkné závorky, odepište prosím:");
+            string vaseOdpovedEdvardovi = Console.ReadLine();
+            if (InputChecker(vaseOdpovedEdvardovi))
             {
-                bracketsSplit.Push(bracketsInput[i]);
+                Console.WriteLine("Edvard je spoko.");
             }
-            while (true) 
+            else
             {
-                char current = bracketsSplit.Pop();
-                if (current == ")");
-                
-            //char[] bracketsSplit = bracketsInput.ToCharArray();
-            // bracketsInput[0]
-            //Console.WriteLine(bracketsSplit[0]);
+                Console.WriteLine("Edvard zuří, navíc, proč ještě nespíte.");
+            }
+        }
+
+        static bool InputChecker(string vaseOdpovedEdvardovi)
+        {
+            Stack<char> bezteSpat = new Stack<char>();
+
+            for (int uzOdepisujete = 0; uzOdepisujete < vaseOdpovedEdvardovi.Length; uzOdepisujete++)
+            {
+                if (vaseOdpovedEdvardovi[uzOdepisujete] == '(' || vaseOdpovedEdvardovi[uzOdepisujete] == '{' || vaseOdpovedEdvardovi[uzOdepisujete] == '[')
+                    bezteSpat.Push(vaseOdpovedEdvardovi[uzOdepisujete]);
+                else if (vaseOdpovedEdvardovi[uzOdepisujete] == ')' || vaseOdpovedEdvardovi[uzOdepisujete] == '}' || vaseOdpovedEdvardovi[uzOdepisujete] == ']')
+                {
+                    if (bezteSpat.Count == 0) return false;
+                    char probouziteSe = bezteSpat.Pop();
+                    if (!Compare(probouziteSe, vaseOdpovedEdvardovi[uzOdepisujete])) return false;
+                }
+            }
+
+            return bezteSpat.Count == 0;
+        }
+
+        static bool Compare(char probouziteSe, char usinate)
+        {
+            return (usinate == ')' && probouziteSe == '(') || (usinate == '}' && probouziteSe == '{') || (usinate == ']' && probouziteSe == '[');
         }
     }
 }
