@@ -1,0 +1,14 @@
+C:\Users\franclp\source\repos\toilet-paper\bin\Debug\toilet-paper.exe.config
+C:\Users\franclp\source\repos\toilet-paper\bin\Debug\toilet-paper.exe
+C:\Users\franclp\source\repos\toilet-paper\bin\Debug\toilet-paper.pdb
+C:\Users\franclp\source\repos\toilet-paper\obj\Debug\toilet-paper.csproj.AssemblyReference.cache
+C:\Users\franclp\source\repos\toilet-paper\obj\Debug\toilet-paper.csproj.CoreCompileInputs.cache
+C:\Users\franclp\source\repos\toilet-paper\obj\Debug\toilet-paper.exe
+C:\Users\franclp\source\repos\toilet-paper\obj\Debug\toilet-paper.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\toilet-paper\bin\Debug\toilet-paper.exe.config
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\toilet-paper\bin\Debug\toilet-paper.exe
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\toilet-paper\bin\Debug\toilet-paper.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\toilet-paper\obj\Debug\toilet-paper.csproj.AssemblyReference.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\toilet-paper\obj\Debug\toilet-paper.csproj.CoreCompileInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\toilet-paper\obj\Debug\toilet-paper.exe
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\toilet-paper\obj\Debug\toilet-paper.pdb
