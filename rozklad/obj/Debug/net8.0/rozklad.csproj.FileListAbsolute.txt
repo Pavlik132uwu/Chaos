@@ -1,0 +1,15 @@
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\bin\Debug\net8.0\rozklad.exe
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\bin\Debug\net8.0\rozklad.deps.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\bin\Debug\net8.0\rozklad.runtimeconfig.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\bin\Debug\net8.0\rozklad.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\bin\Debug\net8.0\rozklad.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\obj\Debug\net8.0\rozklad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\obj\Debug\net8.0\rozklad.AssemblyInfoInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\obj\Debug\net8.0\rozklad.AssemblyInfo.cs
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\obj\Debug\net8.0\rozklad.csproj.CoreCompileInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\obj\Debug\net8.0\rozklad.sourcelink.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\obj\Debug\net8.0\rozklad.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\obj\Debug\net8.0\refint\rozklad.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\obj\Debug\net8.0\rozklad.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\obj\Debug\net8.0\rozklad.genruntimeconfig.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\rozklad\obj\Debug\net8.0\ref\rozklad.dll
