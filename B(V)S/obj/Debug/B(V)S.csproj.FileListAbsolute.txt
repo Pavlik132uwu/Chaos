@@ -1,0 +1,7 @@
+C:\Users\franclp\source\repos\B(V)S\obj\Debug\B(V)S.csproj.AssemblyReference.cache
+C:\Users\franclp\source\repos\B(V)S\obj\Debug\B(V)S.csproj.CoreCompileInputs.cache
+C:\Users\franclp\source\repos\B(V)S\bin\Debug\B(V)S.exe.config
+C:\Users\franclp\source\repos\B(V)S\bin\Debug\B(V)S.exe
+C:\Users\franclp\source\repos\B(V)S\bin\Debug\B(V)S.pdb
+C:\Users\franclp\source\repos\B(V)S\obj\Debug\B(V)S.exe
+C:\Users\franclp\source\repos\B(V)S\obj\Debug\B(V)S.pdb
