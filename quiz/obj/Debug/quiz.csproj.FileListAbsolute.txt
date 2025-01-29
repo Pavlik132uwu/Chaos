@@ -1,0 +1,7 @@
+C:\Users\franclp\source\repos\quiz\bin\Debug\quiz.exe.config
+C:\Users\franclp\source\repos\quiz\bin\Debug\quiz.exe
+C:\Users\franclp\source\repos\quiz\bin\Debug\quiz.pdb
+C:\Users\franclp\source\repos\quiz\obj\Debug\quiz.csproj.AssemblyReference.cache
+C:\Users\franclp\source\repos\quiz\obj\Debug\quiz.csproj.CoreCompileInputs.cache
+C:\Users\franclp\source\repos\quiz\obj\Debug\quiz.exe
+C:\Users\franclp\source\repos\quiz\obj\Debug\quiz.pdb
