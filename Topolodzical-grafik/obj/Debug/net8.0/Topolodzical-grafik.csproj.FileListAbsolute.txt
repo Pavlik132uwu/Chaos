@@ -1,0 +1,15 @@
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\bin\Debug\net8.0\Topolodzical-grafik.exe
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\bin\Debug\net8.0\Topolodzical-grafik.deps.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\bin\Debug\net8.0\Topolodzical-grafik.runtimeconfig.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\bin\Debug\net8.0\Topolodzical-grafik.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\bin\Debug\net8.0\Topolodzical-grafik.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\obj\Debug\net8.0\Topolodzical-grafik.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\obj\Debug\net8.0\Topolodzical-grafik.AssemblyInfoInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\obj\Debug\net8.0\Topolodzical-grafik.AssemblyInfo.cs
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\obj\Debug\net8.0\Topolodzical-grafik.csproj.CoreCompileInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\obj\Debug\net8.0\Topolodzical-grafik.sourcelink.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\obj\Debug\net8.0\Topolodzical-grafik.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\obj\Debug\net8.0\refint\Topolodzical-grafik.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\obj\Debug\net8.0\Topolodzical-grafik.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\obj\Debug\net8.0\Topolodzical-grafik.genruntimeconfig.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Topolodzical-grafik\obj\Debug\net8.0\ref\Topolodzical-grafik.dll
