@@ -1,0 +1,15 @@
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\bin\Debug\net8.0\Witcher.exe
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\bin\Debug\net8.0\Witcher.deps.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\bin\Debug\net8.0\Witcher.runtimeconfig.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\bin\Debug\net8.0\Witcher.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\bin\Debug\net8.0\Witcher.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\obj\Debug\net8.0\Witcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\obj\Debug\net8.0\Witcher.AssemblyInfoInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\obj\Debug\net8.0\Witcher.AssemblyInfo.cs
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\obj\Debug\net8.0\Witcher.csproj.CoreCompileInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\obj\Debug\net8.0\Witcher.sourcelink.json
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\obj\Debug\net8.0\Witcher.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\obj\Debug\net8.0\refint\Witcher.dll
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\obj\Debug\net8.0\Witcher.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\obj\Debug\net8.0\Witcher.genruntimeconfig.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\Witcher\obj\Debug\net8.0\ref\Witcher.dll
