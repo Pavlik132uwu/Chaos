@@ -1,0 +1,7 @@
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\connect\bin\Debug\connect.exe.config
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\connect\bin\Debug\connect.exe
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\connect\bin\Debug\connect.pdb
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\connect\obj\Debug\connect.csproj.AssemblyReference.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\connect\obj\Debug\connect.csproj.CoreCompileInputs.cache
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\connect\obj\Debug\connect.exe
+C:\Users\pavel\Documents\1.škola\GCHD\IVT\Chaos\connect\obj\Debug\connect.pdb
