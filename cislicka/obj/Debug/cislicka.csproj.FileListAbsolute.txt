@@ -1,0 +1,7 @@
+O:\ciiiheshteg\Chaos\cislicka\bin\Debug\cislicka.exe.config
+O:\ciiiheshteg\Chaos\cislicka\bin\Debug\cislicka.exe
+O:\ciiiheshteg\Chaos\cislicka\bin\Debug\cislicka.pdb
+O:\ciiiheshteg\Chaos\cislicka\obj\Debug\cislicka.csproj.AssemblyReference.cache
+O:\ciiiheshteg\Chaos\cislicka\obj\Debug\cislicka.csproj.CoreCompileInputs.cache
+O:\ciiiheshteg\Chaos\cislicka\obj\Debug\cislicka.exe
+O:\ciiiheshteg\Chaos\cislicka\obj\Debug\cislicka.pdb
