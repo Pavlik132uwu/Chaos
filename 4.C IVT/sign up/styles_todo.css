@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fafafa;
+}
+form {
+  background-color: #ffffff;
+  border: 3px solid #f1f1f1;
+  border-radius: 16px;
+  padding:16px;
+  width: 50vw;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  box-sizing: border-box;
+  
+}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  display: inline;
+  width:100%;
+}
+
+button:hover { /* jak se chová tlačítko po najetí myši */
+  opacity: 0.8;
+}
+
+.darkmodebtn{
+  float:right;
+  width:auto;
+  background-color:#fafafa;
+  
+  /* 
+  TODO 7: Nastavte zaoblení obdélníku tlačítka tak, aby se z něj stal kruh.
+  */
+  border-radius: 50%;
+
+  /*
+  TODO 8: Nastavte odsazení od obrázku v tlačítku o 8px
+  */
+  padding: 8px;
+
+  /*
+  TODO 9: Nastavte odsazení od kraje stránky o 8px
+  */
+  margin: 8px;
+}
+.darkmodebtn > img{
+  width:30px;
+}
+.darkmodebtn:hover{
+  background-color:#e0e0e0;
+}
+
+
+.cancelbtn {
+  background-color: #f44336;
+}
+.signupbtn{
+  background-color: #04AA6D;
+}
+
+.button-container { 
+  /* pro rovnoměrné rozdělení tlačítek Cancel a Sign Up */
+  display: flex;
+  justify-content: space-between;
+  gap:8px;
+}
+

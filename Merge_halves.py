@@ -2,7 +2,7 @@ import random
 import time
 
 list=[]
-n=500
+n=10001
 for i in range(n):
     list.append(i)
 random.shuffle(list)
